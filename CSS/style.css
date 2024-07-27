@@ -84,6 +84,14 @@
     
 }
 
+.main-right-title{
+    margin-left: 15px;
+}
+
+.main-right-sub{
+    margin-left: 15px;
+}
+
 .main-name{
     margin-left: 15px;
     margin-bottom: 0px;
@@ -93,12 +101,12 @@
 }
 
 #name{
-    width: 65%;
+    width: 30%;
     padding: 12px 20px;
     margin: 15px 12px;
     display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
     box-sizing: border-box;
     margin-top: 5px;
 }
@@ -112,12 +120,12 @@
 }
 
 #input-email{
-    width: 65%;
+    width: 30%;
     padding: 12px 20px;
     margin: 15px 12px;
     display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
     box-sizing: border-box;
     margin-top: 5px;
 }
@@ -131,12 +139,12 @@
 }
 
 #phoneNumber{
-    width: 65%;
+    width: 30%;
     padding: 12px 20px;
     margin: 15px 12px;
     display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
     box-sizing: border-box;
     margin-top: 5px;
 }
