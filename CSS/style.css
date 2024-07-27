@@ -44,23 +44,41 @@
 
 .main-content{
     display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto; */
 }
 
 .main-left{
-    border: 1px solid;
-    width: 100%;
-    height: 300px;
+    /* border: 1px solid; */
+    width: 75%;
+    height: 550px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 .main-right {
-    border: 1px solid;
-    width: 100%;
-    height: 300px;
+    /* border: 1px solid; */
+    width: 50%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
 }
 
 .main-banner{
-    width: 100%;
-    height: 150px;
+    width: 75%;
+    height: 85%;
+    display: block;
+    margin-bottom: 20px;
     border: 1px solid;
     background-image: url("https://picsum.photos/200");
 }
@@ -73,14 +91,23 @@
     border-radius: 50%;
 }
 
+.icon-desc-main{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 450;
+}
+
 .icon-desc-sub{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 450;
     text-align: center;
+    font-size: 15px;
 }
 
 .main-item{
     display: flex;
     align-items: center;
     margin-left: 25px;
+    justify-content: center;
     
 }
 
@@ -89,6 +116,7 @@
 }
 
 .main-right-sub{
+    margin-top: 0.5px;
     margin-left: 15px;
 }
 
@@ -98,10 +126,11 @@
     font-family: sans-serif;
     font-size: 14px;
     font-weight: bold;
+    /* align-self: center; */
 }
 
 #name{
-    width: 30%;
+    width: 50%;
     padding: 12px 20px;
     margin: 15px 12px;
     display: inline-block;
@@ -109,6 +138,7 @@
     border-radius: 5px;
     box-sizing: border-box;
     margin-top: 5px;
+    align-self: center;
 }
 
 .email{
@@ -117,10 +147,11 @@
     font-family: sans-serif;
     font-size: 14px;
     font-weight: bold;
+    /* align-self: center; */
 }
 
 #input-email{
-    width: 30%;
+    width: 50%;
     padding: 12px 20px;
     margin: 15px 12px;
     display: inline-block;
@@ -128,6 +159,7 @@
     border-radius: 5px;
     box-sizing: border-box;
     margin-top: 5px;
+    align-self: center;
 }
 
 .number{
@@ -136,10 +168,11 @@
     font-family: sans-serif;
     font-size: 14px;
     font-weight: bold;
+    /* align-self: center; */
 }
 
 #phoneNumber{
-    width: 30%;
+    width: 50%;
     padding: 12px 20px;
     margin: 15px 12px;
     display: inline-block;
@@ -147,4 +180,38 @@
     border-radius: 5px;
     box-sizing: border-box;
     margin-top: 5px;
+    align-self: center;
+}
+
+.main-right-submit{
+    margin-top: 15px;
+    width: 50%;
+    height: 32px;
+    align-self: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    background-color: cadetblue;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.main-destination-title{
+    margin-left: 15px;
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    /* align-self: center; */
+}
+
+#main-destination-option{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 15px 12px;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    align-self: center;
 }
