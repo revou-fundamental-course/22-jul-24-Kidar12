@@ -1,0 +1,30 @@
+.header{
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    /* background-image: url("https://picsum.photos/200");
+    height: 25px;
+    width: 50px;
+    background-size: cover; */
+}
+
+.brand-title{
+    padding-left: 12px;
+    margin-left: 15px   ;
+}
+
+.item {
+    border: 1px solid;
+    text-align: center;
+    padding: 8px;
+}
+
+.navigasi {
+    display: flex;
+    align-items: center;
+}
