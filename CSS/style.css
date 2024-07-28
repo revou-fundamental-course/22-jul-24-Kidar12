@@ -1,8 +1,10 @@
 .header{
-    border: 1px solid;
+    /* border: 1px solid; */
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .title{
@@ -103,24 +105,34 @@
     display: block;
 }
 
+.main-item{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 55px;
+    
+}
+
 .main-icon{
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
     border: 1px solid;
     border-radius: 50%;
     margin-right: 10px;
 }
 
 .icon{
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
     border-radius: 50px;
+    object-fit: fill;
 }
 
 .icon-desc-main{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 450;
     margin: 0;
+    margin-bottom: 2px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -130,16 +142,18 @@
     font-weight: 450;
     font-size: 15px;
     margin: 0;
+    margin-bottom: 5px;
     padding: 0;
     box-sizing: border-box;
 }
 
-.main-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 55px;
-    
+.icon-review{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 450;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .main-right-title{
@@ -247,6 +261,7 @@
     text-align: center;
     text-decoration: none;
     font-size: 16px;
+    font-weight: bold;
     margin-top: 15px;
     width: 60%;
     height: 40px;
@@ -257,6 +272,7 @@
 }
 
 .main-right-submit:hover {
+    font-weight: bold;
     background-color: cadetblue;
     color: aliceblue; /* Ubah warna teks saat di-hover */
 }
@@ -264,7 +280,7 @@
 .main-benefit{
     /* border: 1px solid; */
     width: 77%;
-    height: 250px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     background-color: #f9f9f9;
@@ -281,58 +297,162 @@
     margin-top: 1%;
 }
 
-.benefit-sub{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    margin: 0%;
-    /* margin-bottom: 4%; */
-}
-
 .benefit-list{
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-top: 4%;
+    margin-left: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: light;
 }
 
 .main-top-destination{
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 77%;
     height: 650px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     background-color: #f9f9f9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: auto;
-    margin-top: 20px;
-}
-
-.upper-top, .lower-top{
-    display: flex;
-    justify-content: space-around;
+    margin-top: 40px;
+    text-align: left;
+    padding: 20px;
 }
 
 .top-desti-title{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 25px;
+    margin-left: 0%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+    text-align: left;
+    /* margin-bottom: 20px; */
 }
 
-.desti, img{
-    width: 70%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.paris-desc{
-    font-weight: bold;
+.top-desti-sub{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
+    margin-left: 0%;
+    text-align: left;
+    /* margin-bottom: 20px; */
 }
 
-.paris-author{
-    font-size: 12px;
+.upper-top, .lower-top{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.destination-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+}
+
+.desti {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.destination-info {
+    position: absolute;
+    bottom: 200px;
+    left: 0px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border-radius: 0 0 10px 10px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.main-contact{
+    width: 77%;
+    height: 200px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-title, .contact-sub{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-title{
+    font-size: 32px;
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+
+/* .contact-sub{
+    font-weight: lighter;
+} */
+
+.contact-button{
+    display: inline-block;
+    padding: 0 20px;
+    color: cadetblue;
+    background-color: transparent;
+    border: 2px solid cadetblue;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    width: 20%;
+    height: 40px;
+    border-radius: 10px;
+    line-height: 32px;
+    align-self: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-button:hover {
+    font-weight: bold;
+    background-color: cadetblue;
+    color: aliceblue; /* Ubah warna teks saat di-hover */
+}
+
+.main-foot{
+    width: 98%;
+    height: 70px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.upper-foot{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.lower-foot{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    text-align: center;
 }
