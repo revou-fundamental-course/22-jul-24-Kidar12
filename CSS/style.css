@@ -5,6 +5,7 @@
     justify-content: space-between;
     background-color: cadetblue;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    height: 60px;
 }
 
 .title{
@@ -30,7 +31,7 @@
     align-items: center;
 }
 
-.navigasi, a{
+.navigasi a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -457,25 +458,23 @@
     color: aliceblue; /* Ubah warna teks saat di-hover */
 }
 
-.main-foot{
+.main-foot {
     width: 98%;
-    height: auto;
+    height: 160px;
     background-color: cadetblue;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 20px;
-    margin: auto;
     margin-top: 40px;
     text-align: center;
 }
 
-.footer-title{
+.footer-title {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 22px;
-    /* margin-bottom: 10px; */
     color: #f9f9f9;
 }
 
-.upper-foot{
+.upper-foot {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -485,10 +484,22 @@
     color: #f9f9f9;
 }
 
-.lower-foot{
+.upper-foot p {
+    margin: 0;
+}
+
+.upper-foot p a {
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+.upper-foot p a:hover {
+    text-decoration: underline;
+}
+
+.lower-foot {
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    text-align: center;
     color: #f9f9f9;
 }
