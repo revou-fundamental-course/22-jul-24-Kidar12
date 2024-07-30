@@ -104,12 +104,22 @@
     display: block;
     margin-bottom: 20px;
     border-radius: 10px;
+    overflow: hidden;
+    position: relative;
     /* border: 1px solid; */
 }
 
-.main-banner {
+.main-banner img {
     width: 100%;
-    overflow: hidden;
+    height: 400px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main-banner img.active {
+    display: block;
 }
 
 .banner{
@@ -291,7 +301,16 @@
 .main-right-submit:hover {
     font-weight: bold;
     background-color: cadetblue;
-    color: aliceblue; /* Ubah warna teks saat di-hover */
+    color: aliceblue;
+}
+
+.error-message{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: 600;
+    font-size: 15px;
+    color: red;
+    margin: 1px;
+    text-align: center;
 }
 
 .main-benefit{

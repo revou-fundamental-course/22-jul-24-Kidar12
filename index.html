@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DiscoverEyes | The Best Website For Booking Tickets</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js"></script>
 </head>
 <body>
     <header class="header">
@@ -29,6 +30,8 @@
             <article class="main-left">
                 <div class="main-banner">
                     <img class="banner" src="https://picsum.photos/694/400" alt="Banner Pic">
+                    <img class="banner" src="https://picsum.photos/694/401" alt="Banner Pic">
+                    <img class="banner" src="https://picsum.photos/694/402" alt="Banner Pic">
                 </div>  
 
                 <div class="main-item">
@@ -44,22 +47,25 @@
                 </div>
             </article>
 
-            <form action="" class="main-right">
+            <form class="main-right" name="formValidate" onsubmit="return validateForm()">
                 <h2 class="main-right-title">Book Your Tickets.</h2>
 
                 <p class="main-right-sub">Forget all your problems and book your tickets to your favorite destination now!</p>
 
                 <p class="main-name">Your Name:</p>
-                <input type="text" name="name" id="name" placeholder="First and Last name" required>
+                <input type="text" name="name" id="name" placeholder="First and Last name">
+                <p id="error-name" class="error-message"></p>
 
                 <p class="email">Enter your Email:</p>
-                <input type="email" name="email" id="input-email" placeholder="example@gmail.com" required>
+                <input type="email" name="email" id="input-email" placeholder="example@gmail.com">
+                <p id="error-email" class="error-message"></p>
 
                 <p class="number">Phone Number:</p>
-                <input type="tel" name="phone" id="phoneNumber" placeholder="0812345678910" required>
+                <input type="tel" name="phone" id="phoneNumber" placeholder="0812345678910">
+                <p id="error-phone" class="error-message"></p>
 
                 <p class="main-destination-title">Your Destination:</p>
-                <select id="main-destination-option" name="destination" required>
+                <select id="main-destination-option" name="destination">
                     <option value="" disabled selected hidden>Where To?</option>
                     <option value="jakarta">Jakarta</option>
                     <option value="usa">USA</option>
@@ -74,6 +80,7 @@
                     <option value="turkiye">Turkiye</option>
                     <option value="spain">Spain</option>
                 </select>
+                <p id="error-destination" class="error-message"></p>
 
                 <button type="submit" class="main-right-submit">Book Now</button>
             </form>
