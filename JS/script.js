@@ -1,3 +1,4 @@
+// VALIDATION FORM
 function validateForm() {
     const name = document.forms["formValidate"]["name"].value.trim();
     const email = document.forms["formValidate"]["email"].value.trim();
@@ -32,6 +33,7 @@ function validateForm() {
     return true;
 }
 
+// AUTO SLIDE BANNER
 document.addEventListener("DOMContentLoaded", function() {
     let currentIndex = 0;
     const images = document.querySelectorAll(".main-banner .banner");
