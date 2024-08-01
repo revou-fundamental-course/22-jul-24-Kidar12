@@ -19,6 +19,7 @@ body {
     box-sizing: border-box;
     max-width: 1000%;
     overflow: hidden;
+    margin-right: 10px;
 }
 
 .company-logo {
@@ -545,7 +546,7 @@ body {
 /* Layar Tablet */
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
     .header{
-        max-width: 100%;
+        max-width: 1000%;
     }
 
     .main-content {
