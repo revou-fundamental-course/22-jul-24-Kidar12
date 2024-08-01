@@ -8,9 +8,10 @@
     <script src="JS/script.js"></script>
 </head>
 <body>
+    <!-- HEADER -->
     <header class="header">
-        <div class="title">
-            <p class="brand-title">DiscoverEyes</p>
+        <div class="company-logo">
+            <img src="Assets/Company Logo.jpeg" alt="Company Logo.jpeg">
         </div>
         <nav class="navigasi">
             <a href="#main-title">Home</a>
@@ -19,19 +20,22 @@
         </nav>
     </header>
 
+    <!-- MAIN PAGE -->
     <main>
         <article id="main-title">
-            <header>
+            <div>
                 <h1 class="tagline-main">DiscoverEyes! - Your Trusted E-Travel Agent</h1> 
-            </header>
+            </div>
             <p class="tagline-sub">Capture The World With Your Own Eyes.</p>
         </article>
         <section class="main-content">
             <article class="main-left">
                 <div class="main-banner">
-                    <img class="banner" src="https://picsum.photos/694/400" alt="Banner Pic">
-                    <img class="banner" src="https://picsum.photos/694/401" alt="Banner Pic">
-                    <img class="banner" src="https://picsum.photos/694/402" alt="Banner Pic">
+                    <img class="banner" src="Assets/Sydney.jpeg" alt="Banner Pic">
+                    <img class="banner" src="Assets/Netherlands.jpeg" alt="Banner Pic">
+                    <img class="banner" src="Assets/Switzerland.jpeg" alt="Banner Pic">
+                    <img class="banner" src="Assets/Cappadocia.jpeg" alt="Banner Pic">
+                    <img class="banner" src="Assets/Jakarta.jpeg" alt="Banner Pic">
                 </div>  
 
                 <div class="main-item">
@@ -67,18 +71,19 @@
                 <p class="main-destination-title">Your Destination:</p>
                 <select id="main-destination-option" name="destination">
                     <option value="" disabled selected hidden>Where To?</option>
-                    <option value="jakarta">Jakarta</option>
-                    <option value="usa">USA</option>
-                    <option value="izu">Izu</option>
-                    <option value="sydney">Sydney</option>
-                    <option value="rome">Rome</option>
                     <option value="bali">Bali</option>
-                    <option value="netherlands">Netherlands</option>
                     <option value="beijing">Beijing</option>
-                    <option value="italy">Italy</option>
                     <option value="france">France</option>
-                    <option value="turkiye">Turkiye</option>
+                    <option value="italy">Italy</option>
+                    <option value="izu">Izu</option>
+                    <option value="jakarta">Jakarta</option>
+                    <option value="netherlands">Netherlands</option>
+                    <option value="rome">Rome</option>
                     <option value="spain">Spain</option>
+                    <option value="switzerland">Switzerland</option>
+                    <option value="sydney">Sydney</option>
+                    <option value="turkiye">Turkiye</option>
+                    <option value="usa">United States of America</option>
                 </select>
                 <p id="error-destination" class="error-message"></p>
 
@@ -133,6 +138,7 @@
         </article>
     </main>
 
+    <!-- FOOTER -->
     <footer class="main-foot">
         <p class="footer-title">DiscoverEyes</p>
         <div class="upper-foot">
@@ -143,7 +149,5 @@
             <p>&copy;2024 DiscoverEyes. All rights reserved.</p>
         </div>
     </footer>
-    <!-- PR:
-     7. CARI FONT BAGUS -->
 </body>
 </html>

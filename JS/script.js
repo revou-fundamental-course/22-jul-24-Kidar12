@@ -4,41 +4,34 @@ function validateForm() {
     const phoneNumber = document.forms["formValidate"]["phone"].value.trim();
     const destination = document.forms["formValidate"]["destination"].value;
     
-    // Reset error messages
     document.getElementById("error-name").innerHTML = "";
     document.getElementById("error-email").innerHTML = "";
     document.getElementById("error-phone").innerHTML = "";
     document.getElementById("error-destination").innerHTML = "";
 
-    // Validasi nama
     if (name === "") {
-        document.getElementById("error-name").innerHTML = "Name Required!";
+        document.getElementById("error-name").innerHTML = "*name required!";
         return false;
     }
 
-    // Validasi email
     if (email === "") {
-        document.getElementById("error-email").innerHTML = "Email Required!";
+        document.getElementById("error-email").innerHTML = "*email required!";
         return false;
     }
 
-    // Validasi nomor telepon
     if (phoneNumber === "") {
-        document.getElementById("error-phone").innerHTML = "Phone Number Required!";
+        document.getElementById("error-phone").innerHTML = "*phone number required!";
         return false;
     }
 
-    // Validasi destinasi
     if (destination === "") {
-        document.getElementById("error-destination").innerHTML = "Destination must be selected!";
+        document.getElementById("error-destination").innerHTML = "*destination must be selected!";
         return false;
     }
 
-    // Jika semua validasi sukses
     return true;
 }
 
-// JS/script.js
 document.addEventListener("DOMContentLoaded", function() {
     let currentIndex = 0;
     const images = document.querySelectorAll(".main-banner .banner");
@@ -50,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
         images[currentIndex].style.display = "block";
     }
 
-    setInterval(showNextImage, 2000); // Change image every 3 seconds
+    setInterval(showNextImage, 2000);
 });
 
 
