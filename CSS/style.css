@@ -4,6 +4,11 @@ body {
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
+    box-sizing: border-box; /* Tambahkan box-sizing */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; /* Pastikan semua elemen menggunakan box-sizing: border-box */
 }
 
 /* HEADER */
@@ -13,13 +18,9 @@ body {
     align-items: center;
     background-color: cadetblue;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
     padding: 0 20px;
     height: 80px;
-    box-sizing: border-box;
-    max-width: 1000%;
-    overflow: hidden;
-    margin-right: 10px;
+    width: 100%;
 }
 
 .company-logo {
@@ -83,7 +84,7 @@ body {
 
 .main-left{
     width: 75%;
-    height: 600px;
+    height: 700px;
     background-color: #f9f9f9;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -93,7 +94,7 @@ body {
 
 .main-right {
     width: 50%;
-    height: 600px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     background-color: #f9f9f9;
@@ -161,7 +162,6 @@ body {
     margin: 0;
     margin-bottom: 2px;
     padding: 0;
-    box-sizing: border-box;
 }
 
 .icon-desc-sub{
@@ -170,7 +170,6 @@ body {
     margin: 0;
     margin-bottom: 5px;
     padding: 0;
-    box-sizing: border-box;
 }
 
 .icon-review{
@@ -178,7 +177,6 @@ body {
     font-size: 15px;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 .main-right-title{
@@ -199,15 +197,12 @@ body {
 }
 
 #name, #input-email, #phoneNumber, #main-destination-option{
-    width: 60%;
+    width: 95%;
     padding: 12px 20px;
     margin: 15px 12px;
     display: inline-block;
     border: 2px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box;
-    margin-top: 5px;
-    align-self: center;
 }
 
 .main-right-submit{
@@ -222,11 +217,10 @@ body {
     font-size: 16px;
     font-weight: bold;
     margin-top: 15px;
-    width: 60%;
+    width: 100%;
     height: 40px;
     border-radius: 10px;
     line-height: 32px;
-    align-self: center;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -350,7 +344,6 @@ body {
     margin: auto;
     margin-top: 40px;
     text-align: center;
-    padding: 20px;
 }
 
 .contact-title{
@@ -375,7 +368,6 @@ body {
     height: 40px;
     border-radius: 10px;
     line-height: 32px;
-    align-self: center;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -394,8 +386,8 @@ body {
     background-color: cadetblue;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 20px;
-    margin-top: 40px;
     text-align: center;
+    overflow: hidden;
 }
 
 .footer-title {
@@ -439,8 +431,6 @@ body {
         flex-direction: column;
         padding: 10px;
         height: auto;
-        width: auto;
-        max-width: 100%;
     }
 
     .company-logo {
@@ -467,7 +457,6 @@ body {
     .main-left {
         width: auto;
         margin-bottom: 20px;
-        object-fit: cover;
     }
 
     .main-right {
@@ -475,7 +464,7 @@ body {
     }
 
     .main-banner {
-        height: 400px;
+        height: 200px;
         object-fit: cover;
     }
 
@@ -486,79 +475,43 @@ body {
     .destination-card {
         width: 100%;
         height: 200px;
-        position: relative;
-        object-fit: cover;
     }
 
     .destination-info {
         font-size: 14px;
-        position: absolute;
         top: 2px;
-        color: white;
         padding: 5px;
     }
 
     .main-foot {
-        width: auto;
-        box-sizing: border-box;
-        height: auto;
-        background-color: cadetblue;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        width: 100%;
         padding: 20px;
-        margin-top: 40px;
-        text-align: center;
     }
-    
+
     .footer-title {
         font-size: 16px;
-        color: #f9f9f9;
     }
-    
+
     .upper-foot {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
         font-size: 12px;
-        margin-bottom: 10px;
-        color: #f9f9f9;
     }
-    
-    .upper-foot p {
-        margin: 0;
-    }
-    
-    .upper-foot p a {
-        color: #f9f9f9;
-        text-decoration: none;
-    }
-    
-    .upper-foot p a:hover {
-        text-decoration: underline;
-    }
-    
+
     .lower-foot {
         font-size: 12px;
-        margin: 0;
-        color: #f9f9f9;
     }
 }
 
 /* Layar Tablet */
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
-    .header{
-        max-width: 1000%;
-    }
-
     .main-content {
         flex-direction: column;
     }
 
     .main-left {
         width: 100%;
-        object-fit: cover;
     }
 
-    .main-right{
+    .main-right {
         width: 100%;
     }
 
@@ -576,63 +529,31 @@ body {
     }
 
     .main-foot {
-        box-sizing: border-box;
-        width: auto;
-        height: auto;
-        background-color: cadetblue;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        width: 100%;
         padding: 20px;
-        margin-top: 40px;
-        text-align: center;
     }
-    
+
     .footer-title {
         font-size: 18px;
-        color: #f9f9f9;
     }
-    
+
     .upper-foot {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
         font-size: 14px;
-        margin-bottom: 10px;
-        color: #f9f9f9;
     }
-    
-    .upper-foot p {
-        margin: 0;
-    }
-    
-    .upper-foot p a {
-        color: #f9f9f9;
-        text-decoration: none;
-    }
-    
-    .upper-foot p a:hover {
-        text-decoration: underline;
-    }
-    
+
     .lower-foot {
         font-size: 14px;
-        margin: 0;
-        color: #f9f9f9;
     }
 }
 
 /* Layar Desktop */
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-    .header{
-        max-width: 100%;
-    }
-
     .main-content {
         flex-direction: row;
     }
 
     .main-left {
         width: 70%;
-        object-fit: cover;
     }
 
     .main-right {
