@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
         images[currentIndex].style.display = "block";
     }
 
-    setInterval(showNextImage, 2000);
+    setInterval(showNextImage, 2000); //Detik nya bisa diganti sepuas nya, untuk saat ini 2 detik
 });
 
 
